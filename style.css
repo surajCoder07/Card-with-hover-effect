@@ -77,6 +77,15 @@ img{
     border-radius: 20px;
     font-family: var(--paragraph-font);
 }
+.btn1{
+color:var(--card-1-color);
+}
+.btn2{
+color:var(--card-2-color);
+}
+.btn3{
+color:var(--card-3-color);
+}
 .card:hover{
     box-shadow: 0 0 15px rgb(0, 0, 0);
     border-radius: 7px;
