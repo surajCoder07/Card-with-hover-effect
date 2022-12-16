@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root{
+    --heading-font:'Big Shoulders Display', cursive;
+    --paragraph-font:'Lexend Deca', sans-serif;
+    --card-1-color: hsl(31, 77%, 52%);
+    --card-2-color: hsl(184, 100%, 22%);
+    --card-3-color:hsl(179, 100%, 13%);
+    --heading-color:hsl(0, 0%, 95%);
+    --paragraph-color: hsla(0, 3%, 94%, 0.75);
+    --padding:0 25px;
+    --margin:10px 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+background-color: #753188;
+}
+h2{
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+    margin: var(--margin);
+}
+p{
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color);
+    font-size: 13px;
+    margin: var(--margin);
+}
+img{
+    width: 40%;
+    margin: var(--margin);
+    transition: all 2s;
+}
+.main{
+    min-height: 100vh;
+    margin: 30px 0 0 ;
+    padding: var(--padding);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0px;
+
+}
+.card{
+    border: none;
+    max-width: 200px;
+    transition: all 0.3s;
+}
+.card div{
+   margin: var(--margin);
+   padding: var(--padding);
+}
+
+.card-1{
+    background-color: var(--card-1-color);
+    border-radius: 3px 0px 0px 3px;
+}
+.card-2{
+    background-color: var(--card-2-color);
+}
+.card-3{
+    background-color: var(--card-3-color);
+    border-radius: 0 3px  3px 0;
+}
+.button{
+    border: none;
+    background-color: var(--heading-color);
+    padding: 10px 15px;
+    margin: var(--margin);
+    border-radius: 20px;
+    font-family: var(--paragraph-font);
+}
+.card:hover{
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+    border-radius: 7px;
+    margin: 10px;
+}
+
+
+button:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color: #ffffffff;
+    border: 1px solid #ffffffff;
+}
+@media  screen and (max-width:650px) {
+    
+    .card-1{
+        border-radius:3px 0 0 3px;
+    }
+    .card-3{
+        border-radius: 0px 0px 3px 3px;
+    }
+    .card-2{
+        border-radius: 0px 3px 3px 0;
+    }
+    
+}
+@media  screen and (max-width:450px) {
+    .card-1{
+        border-radius: 3px 3px 0 0;
+    }
+    .card-2{
+        border-radius:  0 0;
+    }
+}
